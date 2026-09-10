@@ -1,3 +1,7 @@
+# Name: Nam
+# Period: Am
+# Theme Park Admission & Ride Eligibility System
+
 # Asks a few questions then uses the answers to provide receipt to a made-up theme park
 
 print("")
