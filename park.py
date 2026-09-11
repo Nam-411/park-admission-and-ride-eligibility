@@ -97,6 +97,15 @@ else:
 
 # Here is the final report where all of the previous calculations are put together with many print codes
 
+def check_vip(ticket, age, member):
+    if (ticket == "Premium" or ticket == "premium") and ((int(age) >= 65) or (member == "Yes" or member == "yes")):
+        access = "VIP ACCESS"
+    else:
+        access = "STANDARD ACCESS"
+    return access
+
+guest_access = check_vip(ticket_type, guest_age, park_member)
+
 print("")
 print("------------------------------")
 print("JOYRIDE WORLD PARK REPORT")
@@ -127,6 +136,8 @@ print("")
 print("Ticket:")
 print(ticket_status)
 print("")
+print("Guest Access:")
+print(guest_access)
 
 # This last part takes the if and elif codes from line 88 to 91 to give a special message to those who purchased premium
 
